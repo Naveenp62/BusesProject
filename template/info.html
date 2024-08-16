@@ -1,0 +1,16 @@
+<h1 align="center" style="color: brown;">LIST OF BUSES</h1>
+<hr>
+<body>
+    <table border="1" align="center" style="color: lightblue;">
+    <thead style="color: black;">
+        <td style="background-color: aqua; color: black;">Name</td>
+        <td style="background-color: aqua; color: black;">Area</td>
+    {% for bus in buses %}
+    <tr>
+        <td>{{ bus.name }}</td>
+        <td>{{ bus.area }}</td>
+    </tr>
+    {% endfor %}
+    </thead>
+    </table>
+</body>
